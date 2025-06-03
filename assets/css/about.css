@@ -1,0 +1,237 @@
+/* Page Header Section
+----------------------------------------- */
+#page-header.header,
+#page-header.staff {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background: url('../img/fuc-img/the-university3.jpg')no-repeat top center/cover;
+    z-index: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#page-header.staff{
+    background: url('../img/fuc-img/staff-bg.jpg') no-repeat top center/cover !important;
+}
+
+
+#page-header::after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--bs-primary);
+    opacity: .7;
+    z-index: -1;
+}
+
+#page-header::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--bs-dark);
+    opacity: .2;
+    z-index: -2;
+}
+
+/* End Page Header Section
+----------------------------------------- */
+
+
+
+/* #about .about .the-university{
+    width: 100%;
+    height: 100%;
+    padding: 200px 170px;
+    background: url("../img/fuc-img/the-university.jpg") no-repeat center center/cover;
+    
+} */
+
+
+
+
+/* ============================================
+Staff Webpage Section
+===================================================== */
+/* Showcase Section */
+#showcase {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+#showcase .staff {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0px;
+    background: url('../img/fuc-img/showcase-bg.jpg') no-repeat center center/cover;
+    position: fixed;
+    /* padding: 100px; */
+    z-index: -10;
+}
+
+#showcase .student-life {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0px;
+    background: url('../img/fuc-img/freshers-orientation-bg.jpg') no-repeat center center/cover;
+    position: fixed;
+    /* padding: 100px; */
+    z-index: -10;
+}
+
+#showcase .admissions {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0px;
+    background: url('../img/fuc-img/freshers-orientation-bg.jpg') no-repeat center center/cover;
+    position: fixed;
+    /* padding: 100px; */
+    z-index: -10;
+}
+
+#showcase .light-academy {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0px;
+    background: url('../img/lamss-img/showcase-bg.jpg') no-repeat center center/cover;
+    position: fixed;
+    /* padding: 100px; */
+    z-index: -10;
+}
+
+#showcase::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: var(--bs-primary);
+    opacity: .8;
+    z-index: -1;
+}
+
+
+
+
+/* Contact Page Section 
+=========================================*/
+#contact-form {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0px;
+    background: url('../img/fuc-img/freshers-orientation-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    z-index: 1;
+}
+
+#contact-form::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: var(--bs-primary);
+    opacity: .8;
+    z-index: -1;
+}
+
+
+/* Gallery Page Section 
+====================================================*/
+.gallery-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.modal-body img {
+    width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.modal-backdrop.show {
+    opacity: 0.8 !important;
+}
+
+.btn-close {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index: 1000;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+.filter-btn.active {
+    background: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+}
+
+.filter-btn {
+    transition: all .3s ease;
+}
+
+/* End Gallery Page Section 
+====================================================*/
+
+
+
+/* =========================================
+    @media Queries 
+==============================================*/
+
+
+/* @width - 400px 
+=============================================*/
+@media screen and (min-width: 480px) {}
+
+/* End 
+==============*/
+
+/* @Width - 756px 
+=======================================*/
+@media screen and (min-width: 756px) {
+
+    /* Page Header Section */
+    #page-header .contain h1 {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* End Page Header Section */
+}
+
+/* End 
+====================*/
+
+/* @Width - 980px 
+====================================*/
+@media Screen and (min-width: 980px) {}
+
+/* End 
+====================*/

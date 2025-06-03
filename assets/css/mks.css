@@ -1,0 +1,71 @@
+/* Page Header Section
+----------------------------------------- */
+#page-header {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background: url('../img/mks-img/banner.jpg')no-repeat top center/cover;
+    z-index: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#page-header::after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--bs-primary);
+    opacity: .7;
+    z-index: -1;
+}
+
+#page-header::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--bs-dark);
+    opacity: .2;
+    z-index: -2;
+}
+
+/* End Page Header Section
+----------------------------------------- */
+
+
+
+#showcase {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+#showcase .mks {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0px;
+    background: url('../img/mks-img/showcase.jpg') no-repeat center center/cover;
+    position: fixed;
+    /* padding: 100px; */
+    z-index: -10;
+}
+#showcase::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: var(--bs-primary);
+    opacity: .8;
+    z-index: -1;
+}
